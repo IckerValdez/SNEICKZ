@@ -1,0 +1,313 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilos de encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000;
+    color: #fff;
+}
+
+header .logo h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de la sección Hero */
+#hero {
+    height: 100vh;
+    background-image: url('/img/IMG_2763.GIF'); /* Imagen de fondo */
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero .hero-content h2 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#hero .hero-content p {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Sección de Ofertas */
+#ofertas {
+    padding: 50px 20px;
+    background-color: #980000; /* Color de fondo destacado para las ofertas */
+    text-align: center;
+}
+
+#ofertas .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.ofertas-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.oferta {
+    width: 250px;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.oferta img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.oferta h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.oferta p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.oferta a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.oferta a:hover {
+    background-color: #333;
+}
+
+.oferta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de las diapositivas (carrusel) */
+.carousel {
+    display: flex;
+    width: 400%; /* Cuatro imágenes, cada una ocupa el 100% del contenedor */
+    height: 100vh; /* Asegura que el carrusel tenga la misma altura que la ventana */
+    animation: slide 16s infinite; /* Animación que se repite indefinidamente */
+  }
+  
+  /* Cada diapositiva (imagen) */
+  .carousel-slide {
+    width: 100%; /* Cada imagen ocupa el 100% del contenedor */
+    flex-shrink: 0; /* Las imágenes no deben reducir su tamaño */
+  }
+  
+  .carousel-slide img {
+    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    height: 100%; /* Las imágenes ocupan todo el alto del contenedor */
+    object-fit: cover; /* Asegura que las imágenes cubran todo el espacio sin deformarse */
+  }
+  
+  /* Animación para deslizar las imágenes */
+  @keyframes slide {
+    0% {
+      transform: translateX(0); /* Posición inicial */
+    }
+    25% {
+      transform: translateX(-100%); /* Desplazamiento a la segunda imagen */
+    }
+    50% {
+      transform: translateX(-200%); /* Desplazamiento a la tercera imagen */
+    }
+    75% {
+      transform: translateX(-300%); /* Desplazamiento a la cuarta imagen */
+    }
+    100% {
+      transform: translateX(0); /* Vuelve a la primera imagen */
+    }
+  }
+
+/* Sección de Productos */
+#productos {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#productos .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.producto {
+    width: 250px;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Sección de Testimonios */
+#testimonios {
+    padding: 50px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+#testimonios .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.testimonios-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonio {
+    width: 300px;
+    font-style: italic;
+}
+
+.testimonio p {
+    margin-bottom: 20px;
+}
+
+.testimonio h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Sección de Contacto */
+#contacto {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contacto button {
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contacto button:hover {
+    background-color: #333;
+}
+
+/* Estilos del pie de página */
+footer {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
