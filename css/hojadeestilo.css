@@ -50,7 +50,7 @@ nav ul li a:hover {
 /* Estilos de la sección Hero */
 #hero {
     height: 100vh;
-    background-image: url('/img/IMG_2763.GIF'); /* Imagen de fondo */
+    background-image: url('img/IMG_2763.GIF'); /* Imagen de fondo */
     background-color: #000;
     background-size: cover;
     background-position: center;
